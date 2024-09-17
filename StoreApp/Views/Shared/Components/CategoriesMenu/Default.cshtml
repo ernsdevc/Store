@@ -1,0 +1,44 @@
+@model IEnumerable<Category>
+<div class="my-4">
+    <h6 class="lead d-flex justify-content-between align-items-center">
+        <span>
+            <i class="fa fa-list text-secondary"></i> Categories
+        </span>
+        <span class="chevron-toggle" data-bs-toggle="collapse" data-bs-target="#categoryList" aria-expanded="true" aria-controls="categoryList" style="cursor: pointer;">
+            <i id="collapse-icon" class="fa fa-chevron-up"></i>
+        </span>
+    </h6>
+    <div class="collapse show" id="categoryList">
+        <ul class="list-group" style="max-height: 200px; overflow-y: auto;">
+            @foreach (var category in Model)
+            {
+                <li class="list-group-item">
+                    <a asp-action="Index" asp-route-categoryId="@category.CategoryId">@category.CategoryName</a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    console.log("DOM fully loaded and parsed");
+    
+    var categoryList = document.getElementById('categoryList');
+
+    if (categoryList) {
+        categoryList.addEventListener('shown.bs.collapse', function () {
+            document.getElementById('collapse-icon').classList.remove('fa-chevron-down');
+            document.getElementById('collapse-icon').classList.add('fa-chevron-up');
+        });
+
+        categoryList.addEventListener('hidden.bs.collapse', function () {
+            document.getElementById('collapse-icon').classList.remove('fa-chevron-up');
+            document.getElementById('collapse-icon').classList.add('fa-chevron-down');
+        });
+    } else {
+        console.log("Elements not found");
+    }
+});
+</script>
+

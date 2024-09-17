@@ -1,0 +1,15 @@
+C:\Users\erens\OneDrive\Desktop\btk-mvc\Store\Repositories\bin\Debug\net6.0\Repositories.deps.json
+C:\Users\erens\OneDrive\Desktop\btk-mvc\Store\Repositories\bin\Debug\net6.0\Repositories.dll
+C:\Users\erens\OneDrive\Desktop\btk-mvc\Store\Repositories\bin\Debug\net6.0\Repositories.pdb
+C:\Users\erens\OneDrive\Desktop\btk-mvc\Store\Repositories\obj\Debug\net6.0\Repositories.csproj.AssemblyReference.cache
+C:\Users\erens\OneDrive\Desktop\btk-mvc\Store\Repositories\obj\Debug\net6.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erens\OneDrive\Desktop\btk-mvc\Store\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfoInputs.cache
+C:\Users\erens\OneDrive\Desktop\btk-mvc\Store\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfo.cs
+C:\Users\erens\OneDrive\Desktop\btk-mvc\Store\Repositories\obj\Debug\net6.0\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\erens\OneDrive\Desktop\btk-mvc\Store\Repositories\obj\Debug\net6.0\Repositories.dll
+C:\Users\erens\OneDrive\Desktop\btk-mvc\Store\Repositories\obj\Debug\net6.0\refint\Repositories.dll
+C:\Users\erens\OneDrive\Desktop\btk-mvc\Store\Repositories\obj\Debug\net6.0\Repositories.pdb
+C:\Users\erens\OneDrive\Desktop\btk-mvc\Store\Repositories\obj\Debug\net6.0\ref\Repositories.dll
+C:\Users\erens\OneDrive\Desktop\btk-mvc\Store\Repositories\bin\Debug\net6.0\Entities.dll
+C:\Users\erens\OneDrive\Desktop\btk-mvc\Store\Repositories\bin\Debug\net6.0\Entities.pdb
+C:\Users\erens\OneDrive\Desktop\btk-mvc\Store\Repositories\obj\Debug\net6.0\Reposito.787EC4B2.Up2Date

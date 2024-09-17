@@ -1,0 +1,50 @@
+<nav class="navbar bg-light border-bottom navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand" href="/"><i class="fa-solid fa-store fa-2x text-secondary"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav flex-grow-1">
+        <li class="nav-item"><a class="nav-link" id="home-link" asp-controller="Home" asp-action="Index">Home</a></li>
+        <li class="nav-item"><a class="nav-link" id="products-link" asp-controller="Product" asp-action="Index">Products
+            (@await Component.InvokeAsync("ProductSummary"))</a></li>
+        <li class="nav-item"><a class="nav-link" id="categories-link" asp-controller="Category"
+            asp-action="Index">Categories</a></li>
+        <li class="nav-item"><a class="nav-link" id="contact-link" asp-page="/Contact">Contact</a></li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" id="cart-link" asp-page="/Cart"><i class="fa fa-cart-shopping"></i> Cart (@await Component.InvokeAsync("CartSummary"))</a>
+        </li>
+        <partial name="_LoginMenu" />
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const currentUrl = window.location.pathname;
+    const links = document.querySelectorAll('.nav-link');
+
+    // Remove 'active' from all links
+    links.forEach(link => link.classList.remove('active'));
+
+    // Add 'active' to the matching link
+    if (currentUrl === "/") {
+      document.getElementById('home-link').classList.add('active');
+    } else if (currentUrl.includes("product")) {
+      document.getElementById('products-link').classList.add('active');
+    } else if (currentUrl.includes("category")) {
+      document.getElementById('categories-link').classList.add('active');
+    } else if (currentUrl.includes("getintouch")) {
+      document.getElementById('contact-link').classList.add('active');
+    } else if (currentUrl.includes("cart")) {
+      document.getElementById('cart-link').classList.add('active');
+    } else if (currentUrl.includes("login")) {
+      document.getElementById('login-link').classList.add('active');
+    }
+  });
+</script>
